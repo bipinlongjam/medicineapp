@@ -45,13 +45,26 @@ const AddCart = () => {
           <span>{item.desc}</span>
           <span>{item.price}</span>
           <span>{item.qty}</span>
-          <button
+          {/* <button
             onClick={() => {
               handleAddToCart(item);
             }}
           >
             Add To Cart
-          </button>
+          </button> */}
+          {item.qty > 0 ? (
+                <button
+                    onClick={() => {
+                        handleAddToCart(item);
+                    }}
+                >
+                    Add To Cart
+                </button>
+            ) : (
+                <button disabled style={{ backgroundColor: 'gray' }}>
+                    Add To Cart
+                </button>
+            )}
         </div>
       ));
 

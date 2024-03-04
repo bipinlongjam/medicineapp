@@ -42,7 +42,8 @@ const UserContextProvider =(props) =>{
     }
     const addToCart = (items) => {
         // You can add any additional logic here before adding the product to the cart
-        setSelectedProduct([...medArray, items]);
+        // setSelectedProduct([...medArray, items]);
+        setSelectedProduct((prevSelectedItems) => [...prevSelectedItems, items]);
       };
     const increaseQty =(index) =>{
         setSelectedProduct((prev) =>{
