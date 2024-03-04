@@ -1,0 +1,37 @@
+.heading{
+    display: flex;
+    background-color: rgb(252, 238, 238);
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    list-style: none;
+}
+.alignedContent{
+    justify-content: space-between;
+    align-items: center;
+}
+.meds{
+    display: flex;
+    background-color: rgb(236, 217, 217);
+    padding: 0.5rem 1rem;
+}
+.meds span{
+    margin: 0 0.5rem;
+}
+.meds button{
+    background-color: rgb(144, 206, 144);
+    border: none;
+    color:white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.meds button:hover{
+    background-color: rgb(55, 85, 55);
+}

@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useState } from 'react';
+import OpenCart from './components/cart/OpenCart';
+import AddCart from './components/form/AddCart';
+import AddProduct from './components/form/AddProduct';
+import Header from './components/header/Header';
+import Overlay from './components/overlay/Overlay';
+import UserContextProvider from './store/ProductContext';
 
 function App() {
+  // const[showOverlay, setShowOverlay] = useState(false)
+  // const toggleOverlay =()=>{
+  //   setShowOverlay(!showOverlay)
+  // }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>  
+    <UserContextProvider>
+        <Header/>
+        <AddProduct/>
+        <AddCart/>
+        <Overlay>
+          <OpenCart/>
+        </Overlay>
+    </UserContextProvider>
+    </>
   );
 }
 

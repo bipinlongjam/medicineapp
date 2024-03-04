@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(185, 134, 233);
+}
+.cart{
+    background-color: rgb(218, 218, 107);
+    padding:1rem;
+    border-radius: 15px;
+    font-weight: bold;
+}
